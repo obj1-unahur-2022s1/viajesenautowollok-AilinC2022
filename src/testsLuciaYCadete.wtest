@@ -1,0 +1,25 @@
+import remiseras.*
+
+test "Lucia está reemplazando a Mariela y le cobra por un viaje de 10 kms mientras Melina trabaja para Ludmila" {
+	melina.estaTrabajandoPara(ludmila)
+	lucia.estaReemplazandoA(mariela)
+	assert.that(lucia.precioPorViaje(melina, 10) == 150)
+}
+
+test "Lucia está reemplazando a Mariela y le cobra por un viaje de 1 kms mientras Melina trabaja para Ludmila" {
+	melina.estaTrabajandoPara(ludmila)
+	lucia.estaReemplazandoA(mariela)
+	assert.that(lucia.precioPorViaje(melina, 1) == 50)
+}
+
+test "Lucia está reemplazando a Gabriela y le cobra por un viaje de 10 kms mientras Melina trabaja para Ludmila" {
+	melina.estaTrabajandoPara(ludmila)
+	lucia.estaReemplazandoA(gabriela)
+	assert.that(lucia.precioPorViaje(melina, 10) == 180)
+}
+
+test "Lucia está reemplazando a Gabriela y le cobra por un viaje de 1 kms mientras Melina trabaja para Ludmila" {
+	melina.estaTrabajandoPara(ludmila)
+	lucia.estaReemplazandoA(gabriela)
+	assert.that(lucia.precioPorViaje(melina, 1) == 18)
+}

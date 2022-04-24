@@ -1,0 +1,20 @@
+import oficina.*
+import remiseras.*
+
+//La primera remisera es Roxana y la segunda Juana
+test "Para un viaje de 10 kms para AnaMaria la remisera elegida es Juana" {
+	
+	assert.that(oficina.remiseraElegidaParaViaje(anaMaria, 10) == juana)
+}
+
+test "Para un viaje de 10 kms para Teresa la remisera elegida es Roxana" {
+	
+	assert.that(oficina.remiseraElegidaParaViaje(teresa, 10) == roxana)
+}
+
+test "Para un viaje de 4 kms para Teresa la remisera elegida es Roxana" {
+	
+	assert.that(oficina.remiseraElegidaParaViaje(teresa, 4) == roxana)
+}
+
+

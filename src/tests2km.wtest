@@ -1,0 +1,73 @@
+import remiseras.*
+
+//Roxana:
+
+test "Cobro de Roxana a su clienta Ludmila por 2 kms" {
+	roxana.precioPorViaje(ludmila, 2)
+	assert.that(roxana.precioPorViaje(ludmila, 2) == 36)
+}
+
+
+test "Cobro de Roxana a su clienta AnaMaria por 2 kms" {
+	roxana.precioPorViaje(anaMaria, 2)
+	assert.that(roxana.precioPorViaje(anaMaria, 2) == 60)
+}
+
+test "Cobro de Roxana a su clienta Teresa por 2 kms" {
+	roxana.precioPorViaje(teresa, 2)
+	assert.that(roxana.precioPorViaje(teresa, 2) == 44)
+}
+
+//Gabriela:
+
+test "Cobro de Gabriela a su clienta Ludmila por 2 kms" {
+	gabriela.precioPorViaje(ludmila, 2)
+	assert.that(gabriela.precioPorViaje(ludmila, 2) == 43.20)
+}
+
+
+test "Cobro de Gabriela a su clienta AnaMaria por 2 kms" {
+	gabriela.precioPorViaje(anaMaria, 2)
+	assert.that(gabriela.precioPorViaje(anaMaria, 2) == 72)
+}
+
+test "Cobro de Gabriela a su clienta Teresa por 2 kms" {
+	gabriela.precioPorViaje(teresa, 2)
+	assert.that(gabriela.precioPorViaje(teresa, 2) == 52.80)
+}
+
+//Mariela:
+
+test "Cobro de Mariela a su clienta Ludmila por 2 kms" {
+	mariela.precioPorViaje(ludmila, 2)
+	assert.that(mariela.precioPorViaje(ludmila, 2) == 50)
+}
+
+
+test "Cobro de Mariela a su clienta AnaMaria por 2 kms" {
+	mariela.precioPorViaje(anaMaria, 2)
+	assert.that(mariela.precioPorViaje(anaMaria, 2) == 60)
+}
+
+test "Cobro de Mariela a su clienta Teresa por 2 kms" {
+	mariela.precioPorViaje(teresa, 2)
+	assert.that(mariela.precioPorViaje(teresa, 2) == 50)
+}
+
+//Juana
+
+test "Cobro de Juana a su clienta Ludmila por 2 kms" {
+	juana.precioPorViaje(ludmila, 2)
+	assert.that(juana.precioPorViaje(ludmila, 2) == 100)
+}
+
+
+test "Cobro de Juana a su clienta AnaMaria por 2 kms" {
+	juana.precioPorViaje(anaMaria, 2)
+	assert.that(juana.precioPorViaje(anaMaria, 2) == 100)
+}
+
+test "Cobro de Juana a su clienta Teresa por 2 kms" {
+	juana.precioPorViaje(teresa, 2)
+	assert.that(juana.precioPorViaje(teresa, 2) == 100)
+}
