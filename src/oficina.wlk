@@ -5,7 +5,8 @@ object oficina {
 	var segundaRemisera = juana
 	
 	method asignarRemiseras(remisera1, remisera2) {
-		primeraRemisera == remisera1 and segundaRemisera == remisera2
+		primeraRemisera = remisera1
+		segundaRemisera = remisera2
 	}
 	
 	method cambiarPrimerRemiserarPor(remisera) {
@@ -17,7 +18,7 @@ object oficina {
 	}
 	
 	method intercambiarRemiseras() {
-		(primeraRemisera == segundaRemisera) and segundaRemisera == primeraRemisera
+		self.asignarRemiseras(segundaRemisera, primeraRemisera)
 	}
 	
 	method remiseraElegidaParaViaje(cliente, kms) {

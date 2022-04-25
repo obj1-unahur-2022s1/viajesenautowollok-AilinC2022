@@ -9,10 +9,14 @@
  }
 
 object anaMaria {
-	var estadoEconomico = "estable" 
+	var estabilidadEconomica = true
+	
+	method estaEstable() {
+		return estabilidadEconomica
+	}
 	
 	method precioPorKm() {
-		if(estadoEconomico == "estable"){
+		if(self.estaEstable()){
 			return 30
 		} 
 		else{
