@@ -1,3 +1,7 @@
+/*
+ * Muy bien la OFICINA
+ */
+
 import remiseras.*
 
 object oficina {
@@ -18,6 +22,7 @@ object oficina {
 	}
 	
 	method intercambiarRemiseras() {
+		/* Bien reutilizando el método asignarRemiseras(r2,r1)  */
 		self.asignarRemiseras(segundaRemisera, primeraRemisera)
 	}
 	

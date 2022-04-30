@@ -1,4 +1,6 @@
 /*
+ * Clientes y remiseras: OK - Ojo que te faltaron algunos metodos de indicacion que cambian el valor a los atributos
+ * Revisa los comentarios que te dejo dentro de los métodos
  * definir remiseras y clientes.
  */
  
@@ -9,23 +11,19 @@
  }
 
 object anaMaria {
+	/* Te falto el metodo para poder cambiar el valor a  estabilidadEconomica*/
 	var estabilidadEconomica = true
 	
 	method estaEstable() {
 		return estabilidadEconomica
 	}
+	/*Te dejo otra forma resumida de escribir este codigo */
+	method precioPorKm() = if(self.estaEstable()){30} else {25}
 	
-	method precioPorKm() {
-		if(self.estaEstable()){
-			return 30
-		} 
-		else{
-			return 25
-		}
-	}
 }
 
 object teresa {
+	/* Te falto el metodo para poder cambiar el valor a  precioInicial*/
 	var precioInicial = 22
 	method precioPorKm() = precioInicial
 }
@@ -48,10 +46,12 @@ object roxana {
 }
 
 object gabriela {
-	method precioPorViaje(cliente, kms) = (cliente.precioPorKm() * kms) + (cliente.precioPorKm() * kms * 0.2)
+	/* Para sumar un % podes multiplicar por 1.% */
+	method precioPorViaje(cliente, kms) = (cliente.precioPorKm() * kms) * 1.2
 }
 
 object mariela {
+	/* Bien utilizando el max() */
 	method precioPorViaje(cliente, kms) = 50.max(cliente.precioPorKm() * kms)
 }
 
