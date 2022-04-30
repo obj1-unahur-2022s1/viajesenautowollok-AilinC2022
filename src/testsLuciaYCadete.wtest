@@ -1,3 +1,6 @@
+/*
+ * Test OK
+ */
 import remiseras.*
 
 test "Lucia está reemplazando a Mariela y le cobra por un viaje de 10 kms mientras Melina trabaja para Ludmila" {
